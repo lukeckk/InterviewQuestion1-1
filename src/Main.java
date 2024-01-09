@@ -14,6 +14,8 @@ public class Main {
         //quick test
         boolean result = isUnique("always");
         System.out.println(result);
+
+        System.out.println(result);
     }
 
     public static boolean isUnique(String word){
