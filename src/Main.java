@@ -13,10 +13,23 @@ public class Main {
         }
         //quick test
         boolean result = isUnique("always");
-        System.out.println(result);
+        System.out.println("This word is unique : " + result);
     }
 
     public static boolean isUnique(String word){
-        return false;
+
+        char[] list = word.toCharArray();
+        for (int i = 0; i < list.length; i++)
+        {
+            for (int j = i + 1; j < list.length; j++)
+            {
+                if(word.charAt(i) == word.charAt(j))
+                {
+                    return false;
+                }
+
+            }
+        }
+        return true;
     }
 }
